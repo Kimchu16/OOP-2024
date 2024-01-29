@@ -11,6 +11,12 @@ public class Main
         processing.core.PApplet.runSketch( a, new HelloProcessing());
     }
 
+	public void MyFirstProcessing()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new MyFirstProcessing());
+    }
+
 	public void doDogStuff()
 	{
 		// Create a new Dog called Misty
@@ -39,7 +45,25 @@ public class Main
 
 		m.doCatStuff();
 
-		m.helloProcessing();
+		m.MyFirstProcessing();
+
+		Dog nuala = new Dog("Nuala");
+		nuala.speak();
+
+		Cat Milo = new Cat();
+		Milo.speak();
+
+		animal larry = new Dog("Larry");
+		larry.speak();
+		larry = new Cat();
+		larry.speak();
+		
+		animal a = new Dog("A");
+		animal b = new Dog("B");
+		animal c = a;
+
+
+
 	}
 	
 }
